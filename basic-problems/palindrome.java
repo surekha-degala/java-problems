@@ -17,3 +17,17 @@ public class PalindromeChecker {
         }
     }
 }
+//edited this again ;
+ class Solution {
+    public boolean isPalindrome(int n) {
+        int reversed =0;
+        int ori = n;
+        while (n>0 ) {
+            int ld = n %10;
+            reversed = (reversed *10) +ld;
+            
+            n =n/10;
+        }
+        return ori == reversed;
+    }
+}
